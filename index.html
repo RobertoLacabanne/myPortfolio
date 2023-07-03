@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <!-- Include Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="miPortfolio/css/styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- ... -->
+  <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
+
+  <style>
+    .animate__fadeInUp {
+      --animate-duration: 1s;
+      animation-delay: 0.2s;
+      animation-name: fadeInUp;
+    }
+
+    .animate__hover:hover {
+      animation-name: heartBeat;
+    }
+
+    .animate__hover {
+      transition: transform 0.2s;
+    }
+
+    .animate__hover:hover {
+      transform: scale(1.1);
+    }
+
+    .section {
+      height: 100vh;
+    }
+
+    .fade-in {
+      opacity: 0;
+    }
+
+    .fade-in.reveal {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#works">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- About section -->
+  <section id="about" class="py-5 bg-dark text-white section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h2 class="display-4 animate__animated animate__fadeInUp">Hello, I'm Lacabanne Roberto</h2>
+          <p class="animate__animated animate__fadeInUp">
+            Full-stack Developer. I seek to learn every day about new technologies to grow my career in the programming
+            world. I can create applications with React.js and Node.js, as well as work with SQL databases. I can adapt to
+            what is required of me, working independently or as part of a team to achieve the expected goals. Since I
+            discovered the world of programming and its technologies, I haven't stopped studying, specializing, and
+            working on projects. It has changed my way of approaching life, and it's the path I want to continue on. I am
+            motivated to continue improving every day and to face more and more challenges, giving my best. Currently, I
+            am looking for positions as a Full Stack Web Developer, as well as Front-End and Back-End Developer positions.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <img src="miPortfolio/WhatsApp Image 2023-06-01 at 23.34.26 (1).jpeg" alt="Your Name" class="img-fluid rounded-circle animate__animated animate__fadeInUp">
+        </div>
+      </div>
+    </div>
+    <section class="py-5 bg-dark text-white section">
+        <div class="container mt-5">
+          <div class="row text-center">
+            <div class="col-lg-4">
+              <div class="mb-5 animate__animated animate__fadeInUp">
+                <i class="fa fa-code fa-3x mb-3 animate__hover" style="color: #FED138;"></i>
+                <h4 class="text-uppercase mb-3">Web Development</h4>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="mb-5 animate__animated animate__fadeInUp">
+                <i class="fa fa-paint-brush fa-3x mb-3 animate__hover" style="color: #f05933;"></i>
+                <h4 class="text-uppercase mb-3">UX/UI Design</h4>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="mb-5 animate__animated animate__fadeInUp">
+                <i class="fas fa-mobile-alt fa-3x mb-3 animate__hover" style="color: #336791;"></i>
+                <h4 class="text-uppercase mb-3">Mobile Development</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+<!-- Skills section -->
+<section id="Skills" class="bg-dark py-5 section">
+    <div class="container">
+      <h2 class="display-4 text-center text-white mb-5 animate__animated animate__fadeInUp animate__delay-1s">Skills</h2>
+      <div class="row">
+        <div class="col-md-4 col-lg-2 text-center">
+          <div class="mb-5 animate__animated animate__fadeInUp animate__rotateIn animate__delay-2s">
+            <i class="fas fa-tasks fa-3x mb-3 skill-icon" style="color: #FED138;"></i>
+            <h4 class="text-white">Scrum</h4>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2 text-center">
+          <div class="mb-5 animate__animated animate__fadeInUp animate__rotateIn animate__delay-3s">
+            <i class="fas fa-desktop fa-3x mb-3 skill-icon" style="color: #579ACA;"></i>
+            <h4 class="text-white">UX/UI</h4>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2 text-center">
+          <div class="mb-5 animate__animated animate__fadeInUp animate__rotateIn animate__delay-4s">
+            <i class="fab fa-bootstrap fa-3x mb-3 skill-icon" style="color: #563D7C;"></i>
+            <h4 class="text-white">Bootstrap</h4>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2 text-center">
+          <div class="mb-5 animate__animated animate__fadeInUp animate__rotateIn animate__delay-5s">
+            <i class="fas fa-database fa-3x mb-3 skill-icon" style="color: #336791;"></i>
+            <h4 class="text-white">Sequelize.js</h4>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2 text-center">
+          <div class="mb-5 animate__animated animate__fadeInUp animate__rotateIn animate__delay-6s">
+            <i class="fas fa-database fa-3x mb-3 skill-icon" style="color: #336791;"></i>
+            <h4 class="text-white">PostgreSQL</h4>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2 text-center">
+          <div class="mb-5 animate__animated animate__fadeInUp animate__rotateIn animate__delay-7s">
+            <i class="fas fa-server fa-3x mb-3 skill-icon" style="color: #83CD29;"></i>
+            <h4 class="text-white">Express.js</h4>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2 text-center">
+          <div class="mb-5 animate__animated animate__fadeInUp animate__rotateIn animate__delay-8s">
+            <i class="fas fa-code-branch fa-3x mb-3 skill-icon" style="color: #764ABC;"></i>
+            <h4 class="text-white">Redux.js</h4>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2 text-center">
+          <div class="mb-5 animate__animated animate__fadeInUp animate__rotateIn animate__delay-9s">
+            <i class="fab fa-node-js fa-3x mb-3 skill-icon" style="color: #83CD29;"></i>
+            <h4 class="text-white">Node.js</h4>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2 text-center">
+          <div class="mb-5 animate__animated animate__fadeInUp animate__rotateIn animate__delay-10s">
+            <i class="fab fa-react fa-3x mb-3 skill-icon" style="color: #61DAFB;"></i>
+            <h4 class="text-white">React.js</h4>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2 text-center">
+          <div class="mb-5 animate__animated animate__fadeInUp animate__rotateIn animate__delay-11s">
+            <i class="fab fa-js fa-3x mb-3 skill-icon" style="color: #F7DF1E;"></i>
+            <h4 class="text-white">JavaScript</h4>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2 text-center">
+          <div class="mb-5 animate__animated animate__fadeInUp animate__rotateIn animate__delay-12s">
+            <i class="fab fa-git fa-3x mb-3 skill-icon" style="color: #F05032;"></i>
+            <h4 class="text-white">Git</h4>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2 text-center">
+          <div class="mb-5 animate__animated animate__fadeInUp animate__rotateIn animate__delay-13s">
+            <i class="fab fa-react fa-3x mb-3 skill-icon" style="color: #61DAFB;"></i>
+            <h4 class="text-white">React Native</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <!-- Projects section -->
+
+<section id="works" class="py-5 bg-dark text-white section">
+    <div class="container">
+        <h2 class="display-4 text-center animate__animated animate__fadeInUp" style="margin-bottom: 150px;">Projects</h2>
+        <div class="row">
+            <!-- Columna para el primer proyecto -->
+            <div class="col-lg-6">
+                <!-- Titulo para el primer proyecto -->
+                <div class="portfolio-title animate__animated animate__bounceIn">
+                    <h5 class="text-white" style="font-size: 1.5em; margin-bottom: 50px;">a.rodarFoodFilm</h5>
+                </div>
+                <!-- Imagen y enlace para el primer proyecto -->
+                <a href="https://arodarfoodfilm.website/" target="_blank">
+                    <div id="img-proyecto1" class="portfolio-img animate__animated animate__fadeInUp fade-in" style="background-image: url('./miPortfolio/Logo%20a.rodar_negro_png.png'); background-size: contain; background-position: center; background-repeat: no-repeat;"></div>
+                </a>
+            </div>
+        
+            <!-- Columna para el segundo proyecto -->
+            <div class="col-lg-6">
+                <!-- Titulo para el segundo proyecto -->
+                <div class="portfolio-title animate__animated animate__bounceIn">
+                    <h5 class="text-white" style="font-size: 1.5em; margin-bottom: 20px;">Aqui-Estoy</h5>
+                </div>
+                <!-- Imagen y enlace para el segundo proyecto -->
+                <a href="https://www.youtube.com/watch?v=iKMGX8m9BTo" target="_blank">
+                    <div id="img-proyecto2" class="portfolio-img animate__animated animate__fadeInUp fade-in" style="background-image: url('miPortfolio/aquiestoy.jpg'); background-size: contain; background-position: center; background-repeat: no-repeat;"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact section -->
+<section id="contact" class="py-5 bg-dark text-white section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="text-center mb-5">
+            <h2 class="display-4 animate__animated animate__fadeInDown">Let's Connect</h2>
+            <p class="lead animate__animated animate__fadeIn">I would love to hear from you! Whether it's about a project, collaboration, or just a chat.</p>
+          </div>
+          <div class="d-flex justify-content-center animate__animated animate__fadeInUp">
+            <a href="mailto:rlacabanne14@gmail.com" class="btn btn-primary btn-lg btn-minimal mx-2 contact-btn">
+              <i class="fas fa-envelope"></i> Email
+            </a>
+            <a href="https://www.linkedin.com/in/roberto-lacabanne-b1065b232/" target="_blank" class="btn btn-primary btn-lg btn-minimal mx-2 contact-btn">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>  
+  <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
+  <script>
+    // Fade in elements when scrolling
+    $(window).scroll(function () {
+      $(".fade-in").each(function () {
+        var offset = 200;  // Adjust this value to change when elements start to fade in and out
+        var top_of_element = $(this).offset().top + offset;
+        var bottom_of_element = $(this).offset().top + $(this).outerHeight() - offset;
+        var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+  
+        if ((bottom_of_screen > top_of_element) && (bottom_of_screen < bottom_of_element)) {
+          $(this).stop().animate({'opacity':'1'}, 500);  // Element fades in
+        } else {
+          $(this).stop().animate({'opacity':'0'}, 500);  // Element fades out
+        }
+      });
+    });
+</script>
+<script>
+
+    // Animate skill icons on hover
+    $(".fa").hover(
+      function () {
+        $(this).addClass('animate__animated animate__rotateIn');
+      },
+      function () {
+        $(this).removeClass('animate__animated animate__rotateIn');
+      }
+    );
+  </script>
+<script>
+    window.sr = ScrollReveal();
+  
+    sr.reveal('.fade-in', {
+      duration: 2000,
+      delay: 50,
+      distance: '50px',
+      scale: 1,
+      origin: 'bottom',
+      reset: true,
+      opacity: 0,
+      easing: 'ease-in-out',
+    });
+  
+    // Scroll to sections
+    $('.navbar-nav a').on('click', function (e) {
+      if (this.hash !== '') {
+        e.preventDefault();
+  
+        const hash = this.hash;
+  
+        $('html, body').animate(
+          {
+            scrollTop: $(hash).offset().top,
+          },
+          800
+        );
+      }
+    });
+  </script>
+
+
+</body>
+
+</html>
