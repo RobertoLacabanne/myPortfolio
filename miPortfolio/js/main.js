@@ -14,11 +14,15 @@ $(window).scroll(function() {
     $('.portfolio-img').removeClass('active');
   });
 
-  ScrollReveal().reveal('.project-image', {
-    reset: false,
-    delay: 250,
-    opacity: 0,
-    duration: 1000
-});
+  $(document).ready(function () {
+    $('.navbar-toggler').click(function () {
+      if ($('.navbar-collapse').hasClass('show')) {
+        $('.section').css('padding-top', '0');
+      } else {
+        $('.section').css('padding-top', $('.navbar').height() + 'px');
+      }
+    });
+  });
+  
 
   
