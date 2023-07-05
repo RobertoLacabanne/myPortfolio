@@ -34,8 +34,9 @@
     }
 
     .section {
-      height: 100vh;
-    }
+    min-height: 100vh; /* en lugar de height: 100vh; */
+}
+
 
     .fade-in {
       opacity: 0;
@@ -45,9 +46,8 @@
       opacity: 1;
     }
     .portfolio-img {
-    height: 400px; /* Ajusta este valor según tus necesidades */
+    height: 200px; /* Ajusta este valor según tus necesidades */
   }
-
 
 
 .button-class-name {
@@ -81,6 +81,66 @@
       transform: scale(1);
     }
   }
+  .portfolio-img {
+    height: 200px; 
+}
+/* Para pantallas menores a 600px */
+@media only screen and (max-width: 600px) {
+  .portfolio-img {
+    height: 150px; 
+  }
+  #Projects {
+    padding-top: 50px;
+  }
+}
+
+/* Para pantallas menores a 400px */
+@media only screen and (max-width: 400px) {
+  .portfolio-img {
+    height: 100px; 
+  }
+  #Projects {
+    padding-top: 50px;
+  }
+}
+
+
+/* Para pantallas menores a 600px */
+@media only screen and (max-width: 600px) {
+  .portfolio-img {
+    height: 150px; 
+  }
+}
+
+/* Para pantallas menores a 400px */
+@media only screen and (max-width: 400px) {
+  .portfolio-img {
+    height: 100px; 
+  }
+}
+/* Para pantallas menores a 600px */
+@media only screen and (max-width: 600px) {
+  .portfolio-img {
+    height: 150px; 
+  }
+  #Skills {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+/* Para pantallas menores a 400px */
+@media only screen and (max-width: 400px) {
+  .portfolio-img {
+    height: 100px; 
+  }
+  #Skills {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+
   </style>
 </head>
 
@@ -236,7 +296,7 @@
 
 <section id="works" class="py-5 bg-dark text-white section">
   <div class="container">
-      <h2 class="display-4 text-center animate__animated animate__fadeInUp mb-5">Projects</h2>
+    <h2 class="display-4 text-center animate__animated animate__fadeInUp mb-5">Projects</h2> 
       <div class="row">
           <!-- Columna para el primer proyecto -->
           <div class="col-12 col-md-6 mb-4 mb-md-0">
